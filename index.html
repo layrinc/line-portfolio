@@ -90,13 +90,14 @@ h3{font-size:18px;font-weight:700;color:var(--green)}
 .fill{height:100%;border-radius:5px;background:var(--gray-bar)}
 .fill.after{background:var(--green-bar)}
 .story{display:grid;gap:0;border-top:1px solid var(--rule)}
-.story div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:14.5px}
+.story > div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:14.5px}
 .story dt,.story .k{font-weight:700;color:var(--ink);font-size:13.5px}
 .story .k::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:8px;vertical-align:middle}
 .mini{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px}
 .mini th,.mini td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule);font-variant-numeric:tabular-nums}
 .mini th{font-weight:500;color:var(--muted);font-size:12.5px}
-.mini td.r,.mini th.r{text-align:right}
+.mini td.r,.mini th.r{text-align:right;white-space:nowrap}
+.story > div > .tablewrap{grid-column:2}
 .tablewrap{overflow-x:auto}
 
 /* Works table */
@@ -140,7 +141,8 @@ a{color:var(--green)}
   .kpi:nth-child(2){border-right:0}
   .kpi:nth-child(-n+2){border-bottom:1px solid var(--rule)}
   .charts{grid-template-columns:1fr}
-  .story div{grid-template-columns:1fr;gap:2px}
+  .story > div{grid-template-columns:1fr;gap:2px}
+  .story > div > .tablewrap{grid-column:1}
   .clients{grid-template-columns:1fr}
 }
 @media (max-width:480px){
