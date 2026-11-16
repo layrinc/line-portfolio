@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LINEポートフォリオサイト｜河出壱貫</title>
-<meta name="description" content="河出壱貫のLINE運用実績。公式LINE・Lステップの動線設計、シナリオ制作、実装、一斉配信、数値改善の事例をまとめたポートフォリオです。">
+<meta name="description" content="河出壱貫のLINE運用実績。オンラインスクール・YouTube発のキャリア支援・採用・クリニックで、公式LINE・Lステップの動線設計から数値改善までを担当した事例をまとめたポートフォリオです。">
 <meta property="og:title" content="LINEポートフォリオサイト｜河出壱貫">
 <meta property="og:description" content="公式LINE・Lステップの設計から改善までの運用実績と改善事例。">
 <meta property="og:type" content="website">
@@ -154,44 +154,78 @@ a{color:var(--green)}
   .works tr{border-bottom:1px solid var(--rule);padding-block:10px}
   .works td{border:0;padding:2px 0}
 }
+
+/* Tabs */
+.tabs{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:6px;overflow-x:auto;padding-block:12px;border-bottom:1px solid var(--rule);margin-inline:-4px;padding-inline:4px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;font:inherit;font-size:14.5px;font-weight:700;color:var(--muted);background:var(--bg);border:1px solid var(--rule);border-radius:999px;padding:8px 16px;cursor:pointer;line-height:1.3}
+.tab small{display:block;font-size:11px;font-weight:500}
+.tab[aria-selected="true"]{color:#fff;background:var(--green);border-color:var(--green)}
+.tab:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.panel{display:grid;gap:0}
+.panel[hidden]{display:none}
+.panel{scroll-margin-top:84px}
+.panel-head{display:grid;gap:10px;padding-block:32px 8px}
+.panel-head .kicker{font-size:13px;color:var(--muted)}
+.panel-head h2{font-size:26px}
+.panel section{padding-block:36px}
+.panel .kpis{margin-top:4px}
+.kpi em{font-style:normal;font-size:12px;color:var(--muted)}
+.soon{border:1px dashed var(--gray-bar);border-radius:8px;padding:18px 20px;color:var(--muted);font-size:14.5px}
+.bullets{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:15px}
+.bullets b{color:var(--ink)}
 </style>
 
 </head>
+
 <body>
 <div class="page">
 
   <header>
-    <div class="kicker">LINE運用 ポートフォリオ ／ 2026年10月時点</div>
+    <div class="kicker">LINE運用 ポートフォリオ ／ 2026年11月時点</div>
     <h1>河出壱貫のLINE運用実績</h1>
-    <p class="lead">公式LINE・Lステップの動線設計、シナリオのライティング、実装、毎月の一斉配信、数値改善までを一貫して担当しています。このページでは、社会人向けオンラインスクール7校での実績を数字とあわせてまとめました。</p>
-    <div class="kpis">
-      <div class="kpi"><b>66<small>本</small></b><span>一斉配信の企画・制作</span></div>
-      <div class="kpi"><b>56,697<small>通</small></b><span>延べ配信数</span></div>
-      <div class="kpi"><b>7<small>校</small></b><span>担当したスクール</span></div>
-      <div class="kpi"><b>43.4<small>%</small></b><span>最高開封率</span></div>
-    </div>
+    <p class="lead">公式LINE・Lステップの動線設計、シナリオのライティング、実装、一斉配信、数値改善までを一貫して担当しています。オンラインスクール・YouTube発のキャリア支援・採用・クリニックの実績を、業種ごとにタブで切り替えて見られます。</p>
   </header>
 
   <section>
     <h2>対応範囲</h2>
     <p class="desc">設計から改善までを同じ人が持つので、数字を見て次の一手まで回せます。</p>
     <ol class="steps">
-      <li><b>動線設計</b>広告・LPからLINE登録、予約、参加までの流れとタグを設計</li>
-      <li><b>シナリオ執筆</b>ペルソナと「受講後の理想の状態」を軸に、ステップ配信の全文を作成</li>
+      <li><b>動線設計</b>広告・YouTube・LPからLINE登録、予約・応募、参加までの流れとタグを設計</li>
+      <li><b>シナリオ執筆</b>ペルソナと「その先の理想の状態」を軸に、ステップ配信の全文を作成</li>
       <li><b>Lステップ実装</b>タグ・流入経路・アクション・リッチメニューまで設定し、反映を確認</li>
-      <li><b>一斉配信</b>ナーチャリング配信と、説明会予約への引き上げ配信を企画・制作</li>
-      <li><b>数値改善</b>開封・クリック・予約を配信ごとに集計し、毎月改善策を提案</li>
+      <li><b>一斉配信</b>ナーチャリング配信と、予約・応募への引き上げ配信を企画・制作（バナー制作を含む）</li>
+      <li><b>数値改善</b>回答・予約・開封を集計し、月次レポートで改善策を提案</li>
     </ol>
     <div class="callout">
       <div style="font-size:13px;color:var(--muted);margin-bottom:6px">対応した導線</div>
-      <div class="flow"><span>YouTube・Meta広告</span><i>→</i><span>LP／診断LP</span><i>→</i><span>LINE登録</span><i>→</i><span>動画視聴</span><i>→</i><span>説明会・個別相談の予約</span><i>→</i><span>参加リマインド</span></div>
+      <div class="flow"><span>YouTube・Meta広告</span><i>→</i><span>LP／診断LP</span><i>→</i><span>LINE登録</span><i>→</i><span>診断・アンケート</span><i>→</i><span>説明会・面談・応募の予約</span><i>→</i><span>参加リマインド</span></div>
     </div>
   </section>
 
-  <section>
-    <h2>改善事例</h2>
-    <p class="desc">各事例の「改善の背景を見る」を開くと、入る前の数字・仮説・施策・結果を確認できます。</p>
+  <nav class="tabs" role="tablist" aria-label="業種で切り替え">
+    <button class="tab" role="tab" id="tab-school" aria-controls="school" aria-selected="true">オンラインスクール<small>7校</small></button>
+    <button class="tab" role="tab" id="tab-career" aria-controls="career" aria-selected="false">キャリア支援<small>YouTube×LINE</small></button>
+    <button class="tab" role="tab" id="tab-recruit" aria-controls="recruit" aria-selected="false">採用<small>採用LINE</small></button>
+    <button class="tab" role="tab" id="tab-clinic" aria-controls="clinic" aria-selected="false">クリニック<small>集客・予約</small></button>
+  </nav>
 
+  <!-- ===== オンラインスクール ===== -->
+  <div class="panel" id="school" role="tabpanel" aria-labelledby="tab-school">
+    <div class="panel-head">
+      <div class="kicker">StockSun株式会社「道場」シリーズ ／ 社会人向けオンラインスクール7校 ／ 2026年4月〜継続中</div>
+      <h2>一斉配信と説明会への導線を、7校まとめて運用</h2>
+      <div class="kpis">
+        <div class="kpi"><b>66<small>本</small></b><span>一斉配信の企画・制作</span></div>
+        <div class="kpi"><b>56,697<small>通</small></b><span>延べ配信数</span></div>
+        <div class="kpi"><b>7<small>校</small></b><span>担当したスクール</span></div>
+        <div class="kpi"><b>43.4<small>%</small></b><span>最高開封率</span></div>
+      </div>
+    </div>
+
+    <section>
+      <h2>改善事例</h2>
+      <p class="desc">各事例の「改善の背景を見る」を開くと、入る前の数字・仮説・施策・結果を確認できます。</p>
     <article class="case">
       <div class="case-head">
         <span class="tag">広告運用道場</span>
@@ -244,21 +278,21 @@ a{color:var(--green)}
     </article>
 
     <p style="font-size:12.5px;color:var(--muted)">※ 開封率のバーは50%を最大として表示しています。</p>
-  </section>
+    </section>
 
-  <section>
-    <h2>制作物サンプル</h2>
-    <p class="desc">実際に制作・実装したLINEシナリオの原稿です。</p>
+    <section>
+      <h2>制作物サンプル</h2>
+      <p class="desc">実際に制作・実装したLINEシナリオの原稿です。</p>
     <a class="doc" href="https://docs.google.com/document/d/1fkQFgYG1Y-b4Rum0E3k1gRGlcdsDHSzIitvW-fvDGL0/edit?usp=sharing" target="_blank" rel="noopener">
       <span class="doc-title">動画編集道場PRO｜リスキリング補助金 配信シナリオ</span>
       <span class="doc-meta">Googleドキュメント　／　全14通（登録直後〜5日後）</span>
       <span class="doc-body">補助金で受講料が最大70%オフになることを入口に、無料個別説明会の予約まで導くシナリオ。各通の本文に加えて、タグの付け方、予約済みの人を外す送信先の絞り込み、配信タイミングまで設計しています。</span>
       <span class="doc-open">ドキュメントを開く →</span>
     </a>
-  </section>
+    </section>
 
-  <section>
-    <h2>実績一覧</h2>
+    <section>
+      <h2>実績一覧</h2>
     <div class="tablewrap">
       <table class="works">
         <thead><tr><th>時期</th><th>内容</th><th>ポイント</th></tr></thead>
@@ -274,19 +308,158 @@ a{color:var(--green)}
         </tbody>
       </table>
     </div>
-  </section>
+      <p style="font-size:12.5px;color:var(--muted)">対象：テックエリート／YouTubeディレクター／Salesforce／動画デザイン／動画編集PRO／広告運用／SNSデザイン。開封率＝開封数÷配信数、クリック率＝クリック数÷開封数（Lステップ計測値）。数値は2026年4月10日〜10月4日の一斉配信66本の集計です。</p>
+    </section>
+  </div>
 
-  <section>
-    <h2>支援先・業種</h2>
-    <div class="clients">
-      <div class="client wide"><h4>StockSun株式会社「道場」シリーズ</h4><p>社会人向けオンラインスクール7校（テックエリート／YouTubeディレクター／Salesforce／動画デザイン／動画編集PRO／広告運用／SNSデザイン）　2026年4月〜継続中</p></div>
-      <div class="client"><h4>美容クリニック</h4><p>公式LINEでの集客・予約導線の支援</p></div>
-      <div class="client"><h4>採用・オンラインスクール</h4><p>応募・説明会への集客導線の支援</p></div>
+  <!-- ===== キャリア支援 ===== -->
+  <div class="panel" id="career" role="tabpanel" aria-labelledby="tab-career" hidden>
+    <div class="panel-head">
+      <div class="kicker">YouTube発 エンジニア向けキャリア相談 ／ 既存Lステップのシナリオ改修・一斉配信 ／ 2026年10月〜</div>
+      <h2>年収診断を登録直後の1通目に置き、面談につながる流れに作り直し</h2>
+      <div class="kpis">
+        <div class="kpi"><b>58.9<small>%</small></b><span>年収診断の回答率</span><em>改修前 38%</em></div>
+        <div class="kpi"><b>24.7<small>%</small></b><span>登録→面談予約率</span><em>改修前 18.0%</em></div>
+        <div class="kpi"><b>23.3<small>%</small></b><span>ブロック率</span><em>改修前 42.1%</em></div>
+        <div class="kpi"><b>65.5<small>%</small></b><span>一斉配信の開封率</span><em>診断済み層・10/26</em></div>
+      </div>
     </div>
-  </section>
 
-  <p class="foot">※ 開封率＝開封数÷配信数、クリック率＝クリック数÷開封数（Lステップ計測値）。数値は2026年4月10日〜10月4日の一斉配信66本の集計です。</p>
+    <section>
+      <h2>改善事例</h2>
+      <p class="desc">各事例の「改善の背景を見る」を開くと、入る前の数字・仮説・施策・結果を確認できます。</p>
+
+      <article class="case">
+        <div class="case-head">
+          <span class="tag">シナリオ改修</span>
+          <h3>迷わせていた登録直後を「年収診断」に一本化し、回答率を約1.5倍に</h3>
+        </div>
+        <div class="result"><b>38% → 58.9%</b><span>年収診断の回答率（目標50%を達成）</span></div>
+        <div class="ba">
+          <div class="ba-row"><span>Before</span><div class="track"><div class="fill" style="width:38%"></div></div><b>38%</b></div>
+          <div class="ba-row"><span>After</span><div class="track"><div class="fill after" style="width:58.9%"></div></div><b>58.9%</b></div>
+        </div>
+        <details class="pdca">
+          <summary>改善の背景を見る（入る前の数字・仮説・施策・結果）</summary>
+        <div class="story">
+          <div><span class="k">入る前の数字</span><p>年収診断の回答率は約40%（9月は38%）。登録後の配信16回のうち、診断の案内は登録5分後の1回だけで、見逃した人を拾う仕組みがありませんでした。</p></div>
+          <div><span class="k">気づいたこと</span><p>診断に回答した人の約3〜4割が面談に進んでおり、診断が面談への一番の近道でした。また、面談予約の72%は登録から3日以内に起きていました。</p></div>
+          <div><span class="k">仮説</span><p>最も熱量が高い登録直後に「登録特典」「無料相談」「年収診断」が並び、何をすればよいか迷わせている。最初の行動を診断ひとつに絞れば、回答が増え、その先の面談も増える。</p></div>
+          <div><span class="k">施策</span><p>登録直後の1通目を年収診断に一本化し、回答した人に登録特典を渡す形に変更。回答5分後に無料キャリア相談を案内し、未回答の人には30分以内・3日以内・10日以内にリマインド（回答した時点でタグで自動停止）。リッチメニューは相談の予約を常に表示し、特典の呼び名も3つに統一しました。</p></div>
+          <div><span class="k">結果</span><p>改修後（10/14〜10/31）は回答率58.9%、登録→面談予約率は18.0%→24.7%。心配していたブロック率は上がらず、42.1%→23.3%に下がりました。</p>
+            <div class="tablewrap"><table class="mini">
+              <tr><th>指標</th><th class="r">改修前</th><th class="r">改修後</th></tr>
+              <tr><td>年収診断の回答率</td><td class="r">38%</td><td class="r">58.9%</td></tr>
+              <tr><td>登録→面談予約率</td><td class="r">18.0%</td><td class="r">24.7%</td></tr>
+              <tr><td>回答→面談予約率</td><td class="r">36.9%</td><td class="r">41.9%</td></tr>
+              <tr><td>ブロック率</td><td class="r">42.1%</td><td class="r">23.3%</td></tr>
+            </table></div>
+          </div>
+        </div>
+        </details>
+      </article>
+
+      <article class="case">
+        <div class="case-head">
+          <span class="tag">一斉配信</span>
+          <h3>眠っていた友だちに画像4枚のバナー配信、開封率65.5%・面談予約2件</h3>
+        </div>
+        <div class="result"><b>65.5%</b><span>開封率（診断済み・面談未予約の層）</span></div>
+        <div class="ba">
+          <div class="ba-row"><span>未行動層</span><div class="track"><div class="fill after" style="width:50%"></div></div><b>50.0%</b></div>
+          <div class="ba-row"><span>診断済み</span><div class="track"><div class="fill after" style="width:65.5%"></div></div><b>65.5%</b></div>
+        </div>
+        <details class="pdca">
+          <summary>改善の背景を見る（対象・施策・結果）</summary>
+        <div class="story">
+          <div><span class="k">対象</span><p>登録から4日以上たって動きのない層と、診断は受けたが面談を予約していない層。どちらも継続的な案内がない状態でした。</p></div>
+          <div><span class="k">施策</span><p>層ごとに訴求を分け、未行動層には年収診断、診断済みの層には面談予約を案内。テキストだけでなく、画像4枚をスライドで見せるバナー配信にしました（バナー8枚を制作）。</p></div>
+          <div><span class="k">結果</span><p>開封率は50.0%／65.5%。未行動層から4人が診断に回答し、2つの層から面談予約が1件ずつ入りました。</p>
+            <div class="tablewrap"><table class="mini">
+              <tr><th>配信先</th><th class="r">配信数</th><th class="r">開封率</th><th class="r">成果</th></tr>
+              <tr><td>未行動層（年収診断）</td><td class="r">226</td><td class="r">50.0%</td><td class="r">回答4・予約1</td></tr>
+              <tr><td>診断済み・未予約（面談）</td><td class="r">194</td><td class="r">65.5%</td><td class="r">予約1</td></tr>
+            </table></div>
+          </div>
+        </div>
+        </details>
+      </article>
+      <p style="font-size:12.5px;color:var(--muted)">※ バーは100%を最大として表示しています。</p>
+    </section>
+
+    <section>
+      <h2>実績一覧</h2>
+      <div class="tablewrap">
+        <table class="works">
+          <thead><tr><th>時期</th><th>内容</th><th>ポイント</th></tr></thead>
+          <tbody>
+            <tr><td>2026.09</td><td><strong>現状分析と改善提案</strong><small>既存Lステップ</small></td><td>診断回答者の面談到達率、予約が起きるタイミングを集計し、面談を月＋約7件上乗せする改善案を提案。</td></tr>
+            <tr><td>2026.10</td><td><strong>登録後シナリオの改修</strong><small>年収診断を主軸に再構成</small></td><td>1通目を診断に一本化、未回答者へのリマインド4回、リッチメニューと特典の呼び名を整理。</td></tr>
+            <tr><td>2026.10</td><td><strong>一斉配信の企画・バナー制作</strong><small>2つの層に配信</small></td><td>層ごとに訴求を分けた画像4枚のバナー配信。バナー8枚の制作から配信設定まで担当。</td></tr>
+            <tr><td>2026.11〜</td><td><strong>月次レポートとKPI管理</strong><small>半月ごとに計測</small></td><td>回答率・予約率・ブロック率を目標と並べて見られるレポートを毎月公開し、数字を見て施策を見直す運用に。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:12.5px;color:var(--muted)">回答率＝診断回答数÷新規登録数、予約率＝面談予約数÷新規登録数（Lステップ計測値）。改修前の回答率38%は提案時（9月）の数値、改修後は2026年10月14日〜31日の集計です。</p>
+    </section>
+  </div>
+
+  <!-- ===== 採用 ===== -->
+  <div class="panel" id="recruit" role="tabpanel" aria-labelledby="tab-recruit" hidden>
+    <div class="panel-head">
+      <div class="kicker">運送会社 ／ 採用LINEの新規構築（Lステップ） ／ 2026年10月〜</div>
+      <h2>職種ごとに分けて、エントリーまで迷わせない採用LINE</h2>
+    </div>
+
+    <section>
+      <h2>構築内容</h2>
+      <ul class="bullets">
+        <li><b>アンケートで職種を分ける</b>：登録直後のアンケートで採用区分（総合職／集配ドライバーなど）を聞き、以降の案内を出し分け</li>
+        <li><b>14日間のメインシナリオ</b>：1・3・6・10・14日後に仕事内容、募集要項、エントリーの案内を順に配信</li>
+        <li><b>エントリー意向をタグで管理</b>：「今すぐエントリーしたい」「もう少し検討したい」を状態として記録し、次の案内を変える</li>
+        <li><b>職種別のボタン計測</b>：募集要項のエントリーボタンを職種ごとに分け、どの職種に反応があるかを計測</li>
+        <li><b>リッチメニュー</b>：エントリー・採用情報・募集要項・Instagramへの入口を整理</li>
+        <li><b>月次レポート</b>：毎月の数字をまとめたレポートページを公開</li>
+      </ul>
+      <div class="soon">成果の数字は、運用データがそろい次第ここに掲載します。</div>
+    </section>
+  </div>
+
+  <!-- ===== クリニック ===== -->
+  <div class="panel" id="clinic" role="tabpanel" aria-labelledby="tab-clinic" hidden>
+    <div class="panel-head">
+      <div class="kicker">美容クリニック ／ 公式LINEでの集客・予約導線</div>
+      <h2>公式LINEでの集客・予約導線の支援</h2>
+    </div>
+    <section>
+      <div class="soon">事例は準備中です。</div>
+    </section>
+  </div>
+
+  <p class="foot">※ 数値はすべてLステップの計測値です。業種ごとの集計期間と指標の定義は、各タブの下に記載しています。</p>
 </div>
-
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  function show(id,push){
+    if(!document.getElementById(id)) id=tabs[0].getAttribute('aria-controls');
+    tabs.forEach(function(t){var on=t.getAttribute('aria-controls')===id;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;});
+    panels.forEach(function(p){p.hidden=p.id!==id;});
+    if(push&&history.replaceState) history.replaceState(null,'','#'+id);
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t.getAttribute('aria-controls'),true);});
+    t.addEventListener('keydown',function(e){
+      var k=e.key, n=null;
+      if(k==='ArrowRight') n=tabs[(i+1)%tabs.length];
+      if(k==='ArrowLeft') n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){n.focus();n.click();e.preventDefault();}
+    });
+  });
+  show((location.hash||'').replace('#',''),false);
+  window.addEventListener('hashchange',function(){show(location.hash.replace('#',''),false);});
+})();
+</script>
 </body>
 </html>
